@@ -58,3 +58,8 @@ button {
     color: white;
     padding: 8px;
 }
+
+.alert {
+    font-size: 115%;
+    color: #660000;
+}

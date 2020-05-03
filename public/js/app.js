@@ -3,12 +3,15 @@ const search = document.querySelector('input')
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2') 
 const messageThree = document.querySelector('#message-3') 
+const messageFour = document.querySelector('#message-4') 
+
+messageFour.textContent = 'Alert: Please input the address in detail...if Darbhanga-->then Darbhanga,bihar'
 
 weather_form.addEventListener('submit', (event) => {
     event.preventDefault()
     const location = search.value
     console.log(location)
-
+    messageFour.textContent = ''
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
     messageThree.textContent = ''
